@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">NavDemoAbg</string>
+
+    <string name="homescreen_title">Home</string>
+    <string name="homescreen_text">Welcome to Home Screen</string>
+    <string name="homescreen_button_text">Go to Profile</string>
+
+    <string name="profilescreen_title">Profile</string>
+    <string name="profilescreen_text">User: JohnDoe</string>
+    <string name="profilescreen_button_text">Go to Settings</string>
+
+    <string name="settingsscreen_title">Settings</string>
+    <string name="settingsscreen_text">Settings Screen</string>
+
 </resources>

@@ -30,6 +30,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
@@ -44,7 +45,7 @@ fun HomeScreen(navController: NavController) {
             TopAppBar(
                 title = {
                     Text(
-                        text = "Home",
+                        text = stringResource(id = R.string.homescreen_title),
                         fontSize = 20.sp
                     )
                 }
@@ -59,7 +60,7 @@ fun HomeScreen(navController: NavController) {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
-                text = "Welcome to Home Screen"
+                text = stringResource(id = R.string.homescreen_text)
             )
 
             Spacer(modifier = Modifier.height(32.dp))
@@ -72,7 +73,7 @@ fun HomeScreen(navController: NavController) {
                 }
             ) {
                 Text(
-                    text = "Go to Profile",
+                    text = stringResource(id = R.string.homescreen_button_text),
                     fontSize = 14.sp
                 )
             }

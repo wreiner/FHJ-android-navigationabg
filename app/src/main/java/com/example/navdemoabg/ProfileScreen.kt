@@ -34,6 +34,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
@@ -48,7 +49,7 @@ fun ProfileScreen(navController: NavController) {
             TopAppBar(
                 title = {
                     Text(
-                        text = "Profile",
+                        text = stringResource(id = R.string.profilescreen_title),
                         fontSize = 20.sp
                     )
                 },
@@ -75,7 +76,7 @@ fun ProfileScreen(navController: NavController) {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
-                text = "User: JohnDoe"
+                text = stringResource(id = R.string.profilescreen_text)
             )
 
             Spacer(modifier = Modifier.height(32.dp))
@@ -88,7 +89,7 @@ fun ProfileScreen(navController: NavController) {
                 }
             ) {
                 Text(
-                    text = "Go to Settings",
+                    text = stringResource(id = R.string.profilescreen_button_text),
                     fontSize = 14.sp
                 )
             }
